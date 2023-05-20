@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>记事本</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      textarea {
+        display: block;
+        margin: 30px auto;
+        width: 80%;
+        height: 400px;
+        border: solid 1px #ccc;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #1890ff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .file-input-wrapper {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+      }
+
+      .file-input-wrapper input[type="file"] {
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+      }
+
+      .file-input-wrapper .btn {
+        display: inline-block;
+        cursor: pointer;
+        padding: 8px;
+        color: white;
+        font-size: 16px;
+        background-color: #1890ff;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>记事本</h1>
+    <textarea id="notepad"></textarea>
+  <button onclick="saveTextAsFile()">保存为 .txt 文件</button>
+   <center> <p class="text-center">或者：</p>
+    <div class="text-center file-input-wrapper">
+      <input type="file" onchange="loadFile()" />
+      <div class="btn">打开本地 .txt 文件</div>
+    </div></center>
+  <script>
+      function saveTextAsFile() {
+        const textToWrite = document.getElementById("notepad").value;
+        const textFileAsBlob = new Blob([textToWrite], { type: "text/plain" });
+        const fileNameToSaveAs = "myNote.txt";
+
+        const downloadLink = document.createElement("a");
+        downloadLink.download = fileNameToSaveAs;
+        downloadLink.innerHTML = "Download File";
+        if (window.webkitURL != null) {
+          downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+        } else {
+          downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+          downloadLink.onclick = function (event) {
+            document.body.removeChild(event.target);
+          };
+          downloadLink.style.display = "none";
+          document.body.appendChild(downloadLink);
+        }
+
+        downloadLink.click();
+      }
+
+      function loadFile() {
+        const input = document.querySelector("input[type=file]");
+        const reader = new FileReader();
+        reader.onload = function () {
+          document.getElementById("notepad").value = reader.result;
+        };
+        reader.readAsText(input.files[0]);
+      }
+    </script>
+</body>
+</html>
