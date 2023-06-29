@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>获取 Windows 11 开发环境</title>
-    <style>
+   <link rel="icon" href="https://www.microsoft.com/favicon.ico" type="image/x-icon">
+   <style>
         .rounded-button {
             border-radius: 20px;
-            background-color: #4CAF50;
+            background-color: #2FA1E1;
             border: none;
-            color: white;
+            color: #FF5FA4;
             text-align: center;
             display: inline-block;
             font-size: 16px;
             padding: 10px 24px;
             cursor: pointer;
+        }
+        body {
+                        background: url(https://api.dujin.org/bing/1366.php) no-repeat center / cover fixed;
+                                }
+                                		nav {
+                                                background-color: #F25D8E;
+                                                        height: 50px;
+                                                                width: 100%;
+                                                                      }
         }
     </style>
 </head>
@@ -38,30 +48,30 @@
         WinDev2306Eval.Parallels.zip	21105665153	79F87600565E986A8F74D109A605616DECD0597D876675969E87574DCD93A134<br>
         WinDev2306Eval.VirtualBox.zip	22431228903	69793D9C48BB54D58CBF6A75492AFF42788DE5B00BC8E39D5E82E3FAC4CA84BC<br>
         WinDev2306Eval.VMWare.zip	24402304082	1BE9504AC232E14DA2A545090C38CCE6262ADB53E35FC7EECA2AE89F86F9A98C</p>
-<h2>常见问题
-    VM 有哪些要求？
-    VM 至少需要 8GB 的 RAM 和至少 70GB 的磁盘空间。
+<h2>常见问题<br>
+    VM 有哪些要求？<br>
+    VM 至少需要 8GB 的 RAM 和至少 70GB 的磁盘空间。<br>
+    <br>
+    这些 VM 的用户密码是什么？<br>
+    没有为用户帐户设置密码。但是，某些软件（尤其是用于远程连接到 VM 的软件）可能需要密码。在这些情况下，您需要先为用户帐户设置密码，然后再使用该软件。<br>
+    <br>
+    是否可以激活这些映像中的 Windows 许可证以供长期使用？<br>
+    否，这些 VM 映像使用 Windows 企业评估版，不支持使用产品密钥激活。<br>
+    <br>
+    是否可以获取 ARM 版本的 VM？<br>
+    不幸的是，我们目前没有可用的 ARM 版本。我们知道这可能是令人失望的消息，但我们没有任何短期计划来创建这些。但是，我们始终乐于听取用户的反馈和建议，并在规划未来的更新时将其考虑在内。<br>
+    <br>
+    在Virtualbox上使用这些VM时，我看到了奇怪的渲染怪癖。已知问题？<br>
+    是的，我们注意到在使用VirtualBox运行这些开发人员映像时存在一些渲染怪癖。“开始”菜单的外观也可能与预期不同。我们目前正在调查此行为。同时，我们感谢您的耐心和理解。<br>
+    <br>
+    我已在评估窗口中下载并启动了 VM，但 VM 声称评估许可证已过期。帮助？<br>
+    假设映像在评估窗口中运行，Windows 最终应自行修复。要立即修复它，请运行 Windows 激活疑难解答。<br>
     
-    这些 VM 的用户密码是什么？
-    没有为用户帐户设置密码。但是，某些软件（尤其是用于远程连接到 VM 的软件）可能需要密码。在这些情况下，您需要先为用户帐户设置密码，然后再使用该软件。
-    
-    是否可以激活这些映像中的 Windows 许可证以供长期使用？
-    否，这些 VM 映像使用 Windows 企业评估版，不支持使用产品密钥激活。
-    
-    是否可以获取 ARM 版本的 VM？
-    不幸的是，我们目前没有可用的 ARM 版本。我们知道这可能是令人失望的消息，但我们没有任何短期计划来创建这些。但是，我们始终乐于听取用户的反馈和建议，并在规划未来的更新时将其考虑在内。
-    
-    在Virtualbox上使用这些VM时，我看到了奇怪的渲染怪癖。已知问题？
-    是的，我们注意到在使用VirtualBox运行这些开发人员映像时存在一些渲染怪癖。“开始”菜单的外观也可能与预期不同。我们目前正在调查此行为。同时，我们感谢您的耐心和理解。
-    
-    我已在评估窗口中下载并启动了 VM，但 VM 声称评估许可证已过期。帮助？
-    假设映像在评估窗口中运行，Windows 最终应自行修复。要立即修复它，请运行 Windows 激活疑难解答。
-    
-    是否可以在不安装额外软件的情况下获得评估映像？
-    是的，您可以在此处获取评估图像：
-    
-    https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise
-    https://www.microsoft.com/evalcenter/evaluate-windows-11-enterprise</h2>
+    是否可以在不安装额外软件的情况下获得评估映像？<br>
+    是的，您可以在此处获取评估图像：<br>
+    <br>
+    <a href="https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise">https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise</a><br>
+    <a href="https://www.microsoft.com/evalcenter/evaluate-windows-11-enterprise">https://www.microsoft.com/evalcenter/evaluate-windows-11-enterprise</a></h2>
     <script src="web.js"></script>
     <script src="web2.js"></script>
     <script src="web3.js"></script>
