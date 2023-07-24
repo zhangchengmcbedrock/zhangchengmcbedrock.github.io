@@ -47,3 +47,9 @@
     color: #333;
     border-bottom: 2px solid #333;
   }
+.rounded-box {
+  border-radius: 10px;
+  background-color: lightblue;
+  width: 200px;
+  height: 200px;
+}
