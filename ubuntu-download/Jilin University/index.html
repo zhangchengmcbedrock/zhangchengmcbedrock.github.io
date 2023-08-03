@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ubuntu下载</title>
+    <link rel="icon" href="https://ubuntu.com/favicon.ico">
+    <style>
+		body {
+			font-family: Arial, sans-serif;
+			background: #f2f2f2;
+		}
+		h1 {
+			font-size: 24px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.container {
+			max-width: 400px;
+			margin: 0 auto;
+			background: white;
+			padding: 20px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,.2);a
+		}
+		.input-group {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 20px;
+		}
+		label {
+			font-size: 16px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+		input {
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			background: #f6f6f6;
+			margin-bottom: 10px;
+		}
+		button {
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			background: #007bff;
+			color: white;
+			cursor: pointer;
+			transition: background .3s ease;
+		}
+		button:hover {
+			background: #0056b3;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>下载Ubuntu</h1>
+		<div class="input-group">
+			<label for="input">请输入你要下载Ubuntu的版本号，例如23.04</label>
+			<input type="text" id="input">
+		</div>
+		<button id="submit">下载</button>
+	<a href="help/index.html">帮助</a>
+	<a href="https://mirrors.cnnic.cn/">使用的镜像站</a>
+</div>
+	<script>
+		const input = document.getElementById("input");
+		const submit = document.getElementById("submit");
+
+		submit.addEventListener("click", function() {
+		  let value = input.value.toLowerCase();
+
+		  switch (value) {
+		    case "23.04":
+		      window.location = "https://mirrors.jlu.edu.cn/ubuntu-releases/23.04/";
+		      break;
+		    case "22.04":
+		    case "22.04.2":
+		      window.location = "https://mirrors.jlu.edu.cn/ubuntu-releases/22.04.2/";
+		      break;
+              case "20.04":
+		      window.location = "https://mirrors.jlu.edu.cn/ubuntu-releases/20.04/";
+		      break;
+              case "18.04":
+		      window.location = "https://mirrors.jlu.edu.cn/ubuntu-releases/18.04/";
+		      break;
+              case "16.04":
+		      window.location = "https://mirrors.jlu.edu.cn/ubuntu-releases/16.04/";
+		      break;
+              case "14.04":
+		      window.location = "https://mirrors.jlu.edu.cn/ubuntu-releases/14.04/";
+		      break;
+		    default:
+		      alert("你输错了版本号，请重新输入");
+		  }
+		});
+	</script>
+</body>
+</html>
