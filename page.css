@@ -53,7 +53,8 @@
   width: 200px;
   height: 200px;
 }
-/* 默认样式 */
+
+ /* 默认样式 */
     body {
       background-color: white;
       color: black;
@@ -66,3 +67,4 @@
         color: white;
       }
     }
+
