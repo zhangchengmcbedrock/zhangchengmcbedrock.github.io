@@ -27,10 +27,10 @@ User-agent: Gigabot
 Disallow: 
 User-agent: Mediapartners-Google
 Disallow: 
+Disallow:https://zhangchengmcbedrock.github.io/sitemap.xml
 Disallow:/res/
-Disallow:/talk/
-Disallow:/code/
 Disallow:/js/
-Disallow:/fonts/
+Disallow:/code/
+Disallow:/talk/
 User-agent: *
 Disallow:
