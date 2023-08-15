@@ -1,0 +1,13 @@
+/* 默认样式 */
+body {
+    background-color: white;
+    color: black;
+  }
+
+  /* 深色模式样式 */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: black;
+      color: white;
+    }
+  }
