@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+
+  h1 {
+    padding-top: 40px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  p#randomString {
+    margin: 30px 0;
+    font-size: 20px;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+  }
+
+  button#copyButton {
+    background-color: #008CBA;
+    margin-bottom: 30px;
+  }
