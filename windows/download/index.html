@@ -1,4 +1,49 @@
-<main id="content" class="main-content" role="main">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>浅色/深色模式背景</title>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .light-mode {
+            background-image: url('https://static.miraheze.org/windowswallpaperwiki/5/57/Img0_%28Windows_11%29.jpg');
+        }
+
+        .dark-mode {
+            background-image: url('https://static.miraheze.org/windowswallpaperwiki/f/f3/Img19_%28Windows_11%29.jpg');
+        }
+    </style>
+    <script>
+        function setLightMode() {
+            document.body.classList.add("light-mode");
+            document.body.classList.remove("dark-mode");
+        }
+
+        function setDarkMode() {
+            document.body.classList.add("dark-mode");
+            document.body.classList.remove("light-mode");
+        }
+
+        function checkDarkMode() {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                setDarkMode();
+            } else {
+                setLightMode();
+            }
+        }
+
+        window.onload = function() {
+            checkDarkMode();
+        }
+    </script>
+</head>
+<body>
+  <main id="content" class="main-content" role="main">
 <h3 id="windows原版镜像下载链接"><center>Windows原版镜像下载链接</center></h3>
 <h2 id="msdn我告诉你简体中文搬运"><center>msdn我告诉你简体中文搬运</center></h2>
 <center>以下镜像配合MS-DOS安装，虚拟机</center>
@@ -427,3 +472,6 @@ SHA1:B3260CE8C339E13C4E6D327E1310B06C8E1402B0<br/>
 <a href="ed2k://|file|zh-cn_windows_11_business_editions_version_22h2_updated_nov_2022_x64_dvd_3623b3e1.iso|5567041536|B83E64D03E93B418840E5B270E164005|/">Windows 11商业版更新于2022年11月</a><br/>
 <a href="ed2k://|file|zh-cn_windows_11_consumer_editions_version_22h2_updated_dec_2022_x64_dvd_1ccc2f01.iso|5714872320|A30FB0017DAC36E00449BD89113AFA4D|/">Windows 11消费版更新于2022年12月</a><br/>
 <a href="ed2k://|file|zh-cn_windows_11_business_editions_version_22h2_updated_dec_2022_x64_dvd_0b26ca48.iso|5615894528|A99538D248A9E4A9CDEFC2BC4518BB59|/">Windows 11商业版更新于2022年12月</a><br/></p>
+<h1>本网站是由<a href="https://www.hotokokoa.cn/">https://www.hotokokoa.cn/</a>改造而来的</h1>
+</body>
+</html>
