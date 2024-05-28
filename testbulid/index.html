@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>获取 Windows 11 开发环境</title>
+   <link rel="icon" href="https://www.microsoft.com/favicon.ico" type="image/x-icon">
+   <style>
+        .rounded-button {
+            border-radius: 20px;
+            background-color: #2FA1E1;
+            border: none;
+            color: #FF5FA4;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px 24px;
+            cursor: pointer;
+        }
+        body {
+                        background: url() no-repeat center / cover fixed;
+                                }
+                                		nav {
+                                                background-color: #F25D8E;
+                                                        height: 50px;
+                                                                width: 100%;
+                                                                      }
+        }
+    </style>
+</head>
+<body>
+    <h1>获取 Windows 11 开发环境</h1>
+        <h2>通过使用具有最新版本的 Windows、开发人员工具、SDK 和示例的虚拟机，快速开始构建 Windows 应用程序。</h2>
+    <div><h1>下载虚拟机文件</h1>
+        <h2>我们目前将虚拟机打包为四种不同的虚拟化软件选项：VMWare，Hyper-V（Gen2），VirtualBox和Parallels。<br> 这些虚拟机包含 Windows 的评估版本，该版本在发布之日过期。<br>如果评估期到期，桌面背景将变黑，您将看到一个持续的桌面通知，指示系统不是正版，并且 PC 将每小时关闭一次。<br></h2><button class="rounded-button" onclick="openBaidu()">vmware虚拟机</button><br>
+    <button class="rounded-button" onclick="openGitHub()">hyper-v虚拟机</button><br>
+    <button class="rounded-button" onclick="openBing()">virtualbox虚拟机</button><br>
+    <button class="rounded-button" onclick="openBilibili()">parallels虚拟机</button><h2>过期日期：2023年9月13日</h2></div>
+    <h1>VM 需要至少 8GB 的 RAM 和至少 70GB 的磁盘空间。</h1>
+    <h2>评估虚拟机包括：<br>
+        视窗 11 企业版 （评估）<br>
+        Visual Studio 2022 社区版，启用了适用于 C# 工作负载的 UWP、.NET 桌面、Azure 和 Windows 应用 SDK<br>
+        Windows 子系统适用于 Linux 2 并安装了 Ubuntu<br>
+        已安装的视窗终端<br>
+        已启用开发人员模式<br></h2>
+    <h1>以下是文件的哈希</h1>
+    <p>Name	Length (bytes)	File Hash - SHA256<br>
+        WinDev2306Eval.HyperV.zip	23093474722	DADF8B11150825671BBE5FD962EDD3CD963696D18F63E00E75C685E3EAFE9552<br>
+        WinDev2306Eval.Parallels.zip	21105665153	79F87600565E986A8F74D109A605616DECD0597D876675969E87574DCD93A134<br>
+        WinDev2306Eval.VirtualBox.zip	22431228903	69793D9C48BB54D58CBF6A75492AFF42788DE5B00BC8E39D5E82E3FAC4CA84BC<br>
+        WinDev2306Eval.VMWare.zip	24402304082	1BE9504AC232E14DA2A545090C38CCE6262ADB53E35FC7EECA2AE89F86F9A98C</p>
+<h2>常见问题<br>
+    VM 有哪些要求？<br>
+    VM 至少需要 8GB 的 RAM 和至少 70GB 的磁盘空间。<br>
+    <br>
+    这些 VM 的用户密码是什么？<br>
+    没有为用户帐户设置密码。但是，某些软件（尤其是用于远程连接到 VM 的软件）可能需要密码。在这些情况下，您需要先为用户帐户设置密码，然后再使用该软件。<br>
+    <br>
+    是否可以激活这些映像中的 Windows 许可证以供长期使用？<br>
+    否，这些 VM 映像使用 Windows 企业评估版，不支持使用产品密钥激活。<br>
+    <br>
+    是否可以获取 ARM 版本的 VM？<br>
+    不幸的是，我们目前没有可用的 ARM 版本。我们知道这可能是令人失望的消息，但我们没有任何短期计划来创建这些。但是，我们始终乐于听取用户的反馈和建议，并在规划未来的更新时将其考虑在内。<br>
+    <br>
+    在Virtualbox上使用这些VM时，我看到了奇怪的渲染怪癖。已知问题？<br>
+    是的，我们注意到在使用VirtualBox运行这些开发人员映像时存在一些渲染怪癖。“开始”菜单的外观也可能与预期不同。我们目前正在调查此行为。同时，我们感谢您的耐心和理解。<br>
+    <br>
+    我已在评估窗口中下载并启动了 VM，但 VM 声称评估许可证已过期。帮助？<br>
+    假设映像在评估窗口中运行，Windows 最终应自行修复。要立即修复它，请运行 Windows 激活疑难解答。<br>
+    
+    是否可以在不安装额外软件的情况下获得评估映像？<br>
+    是的，您可以在此处获取评估图像：<br>
+    <br>
+    <a href="https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise">https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise</a><br>
+    <a href="https://www.microsoft.com/evalcenter/evaluate-windows-11-enterprise">https://www.microsoft.com/evalcenter/evaluate-windows-11-enterprise</a></h2>
+    <script src="web.js"></script>
+    <script src="web2.js"></script>
+    <script src="web3.js"></script>
+    <script src="web4.js"></script>
+    
+</body>
+</html>

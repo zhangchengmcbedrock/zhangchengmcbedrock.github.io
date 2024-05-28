@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .nav-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo img {
+    height: 60px; /* 设置图片高度 */
+  }
+  
+  .nav-logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: #333;
+    border-bottom: 2px solid #333;
+  }
+.rounded-box {
+  border-radius: 10px;
+  background-color: lightblue;
+  width: 200px;
+  height: 200px;
+}
+
+ /* 默认样式 */
+    body {
+      background-color: white;
+      color: black;
+    }
+
+    /* 深色模式样式 */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: black;
+        color: white;
+      }
+    }
+

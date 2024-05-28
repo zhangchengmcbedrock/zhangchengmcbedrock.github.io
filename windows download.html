@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>下载 Windows</title>
+  <link rel="icon" href="https://www.microsoft.com/favicon.ico">
+  <style>
+    body {
+      background: url(https://api.dujin.org/bing/1366.php) no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 100px;
+      font-size: 3em;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+
+    .card {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      transition: background-color 0.3s ease-in-out;
+      cursor: pointer;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+      position: relative;
+    }
+
+    .card:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .card .icon {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card .icon img {
+      width: 30px;
+      height: auto;
+    }
+
+    .card h2 {
+      margin: 0;
+      margin-top: 10px;
+      font-size: 2em;
+    }
+
+    .card p {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>下载 Windows</h1>
+  <div class="container">
+    <div class="card" onclick="openLink('https://www.microsoft.com/zh-cn/software-download/windows11')">
+      
+      <h2>Windows 11</h2>
+      <p>Windows 11下载</p>
+ <img src="https://c.s-microsoft.com/zh-cn/CMSImages/w11.png?version=211d8145-0900-cbb1-30dc-dd4498912d98" alt="Windows11">    
+</div>
+    <div class="card" onclick="openLink('https://www.microsoft.com/zh-cn/software-download/windows10')">
+     
+      <h2>Windows 10</h2>
+      <p>Windows 10下载</p>
+<img src="https://c.s-microsoft.com/zh-cn/CMSImages/windows10-laptop.png?version=49444a9b-c8c7-c5bd-9f17-18c1bcc3ce29" alt="Windows10">    
+</div>
+    <div class="card" onclick="openLink('https://www.microsoft.com/zh-cn/software-download/windows8ISO')">
+      
+      <h2>Windows 8.1</h2>
+      <p>Windows 8.1下载</p>
+<img src="https://c.s-microsoft.com/zh-cn/CMSImages/windows8-laptop.png?version=baa869f1-5f37-dd0a-3498-dd5e7692a9f7" alt="Windows8.1">
+ 
+    
+</div>
+  </div>
+
+  <script>
+    function openLink(link) {
+      window.open(link, '_blank');
+    }
+  </script>
+<div align="center"> <a href="https://icp.gov.moe/?keyword=20236018" target="_blank">萌ICP备20236018号</a>
+  </div>
+</body>
+</html>
